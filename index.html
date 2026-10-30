@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">STAY ORGANIZED</p>
+      <h1>Task Manager</h1>
+      <p class="subtitle">A simple place to plan your day.</p>
+    </header>
+
+    <form id="task-form">
+      <input id="task-input" type="text"
+        placeholder="What do you need to do?"
+        maxlength="100" required>
+        <select id="task-priority">
+  <option value="Low">Low</option>
+  <option value="Medium" selected>Medium</option>
+  <option value="High">High</option>
+</select>
+      <button type="submit">Add task</button>
+    </form>
+
+    <section class="toolbar">
+      <div class="filters">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="active" type="button">Active</button>
+        <button class="filter" data-filter="completed" type="button">Completed</button>
+      </div>
+      <span id="task-count">0 tasks</span>
+    </section>
+
+    <ul id="task-list"></ul>
+
+    <div id="empty-state">
+      <h2>No tasks yet</h2>
+      <p>Add your first task above.</p>
+    </div>
+
+    <footer>
+      <span id="remaining-count">0 tasks remaining</span>
+      <button id="clear-completed" type="button">Clear completed</button>
+    </footer>
+  </main>
+</body>
+</html>
