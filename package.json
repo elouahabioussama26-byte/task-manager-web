@@ -1,0 +1,9 @@
+{
+"name": "task-manager-web",
+"version": "0.3.0",
+"description": "Task Manager Web - projet fil rouge DevOps",
+"private": true,
+"scripts": {
+"test": "node --test"
+}
+}
