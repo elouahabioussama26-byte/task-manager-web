@@ -16,7 +16,7 @@ const clean = title.trim();
 if (clean === "") {
 return tasks;
 }
-tasks.push({ title: clean, done: false });
+tasks.push({ title: clean, done: true });
 return tasks;
 }
 // Inverse le statut (terminée / à faire) de la tâche numéro index.
