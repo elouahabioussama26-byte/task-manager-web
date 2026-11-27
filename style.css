@@ -1,4 +1,9 @@
-
+.version {
+margin: 16px 0 0;
+font-size: 12px;
+color: #999999;
+text-align: right;
+}
 * {
   box-sizing: border-box;
 }
@@ -12,7 +17,8 @@ body {
   background: #f4f6fb;
 }
 
-button, input {
+button,
+input {
   font: inherit;
 }
 
@@ -196,16 +202,22 @@ footer {
   }
 }
 li {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 li span {
-flex: 1;
+  flex: 1;
 }
 .remove {
-background: #ffffff;
-color: #b0301c;
-border: 1px solid #b0301c;
-padding: 4px 8px;
-font-size: 12px;
+  background: #ffffff;
+  color: #b0301c;
+  border: 1px solid #b0301c;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.version {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: #999999;
+  text-align: right;
 }
